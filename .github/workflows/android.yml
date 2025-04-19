@@ -28,8 +28,7 @@ jobs:
         run: ./gradlew assembleDebug
 
       - name: Upload APK
-        uses: actions/upload-artifact@v3.1.3
-
+        uses: actions/upload-artifact@v2
         with:
           name: SimplePDFViewer-APK
-          path: app/build/outputs/apk/debug/app-debug.apk  # This path may need to be adjusted
+          path: app/build/outputs/apk/debug/app-debug.apk
